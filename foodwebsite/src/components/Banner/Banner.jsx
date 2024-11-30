@@ -1,5 +1,5 @@
 import React from 'react'
-import BannerImg from "../../assets/banner.png"
+import BannerImg from "../../assets/hero2.png"
 
 function Banner() {
   return (
@@ -14,7 +14,7 @@ function Banner() {
           <div className="flex flex-col justify-center">
             <h1 className="text-4xl font-semibold">Food Is Always Good</h1>
             <p className="py-4 font-semibold">
-            Indulge in our mouthwatering, flavorful, and gourmet dishes, crafted with fresh ingredients, tantalizing aromas, and a heavenly taste experience.{" "}
+            Food is always good because it not only nourishes the body but also brings people together, creating moments of joy and connection. From the comforting warmth of a home-cooked meal to the exciting flavors of global cuisines, food has the power to evoke emotions, spark creativity, and tell stories of culture and tradition.{" "}
             </p>
           </div>
         </div>

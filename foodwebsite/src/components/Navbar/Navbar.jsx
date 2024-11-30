@@ -1,31 +1,33 @@
-import React from 'react';
-import Profile from "../../assets/Profile.png"
-import { MdOutlineKeyboardArrowDown } from "react-icons/md";
+import React from "react";
+import Profile from "../../assets/profile.png";
+import { IoIosArrowDown } from "react-icons/io";
 
-function Navbar() {
+const Navbar = () => {
   return (
-    <div className='py-4'>
-      <div className='container flex justify-between items-center'>
+    <div className=" py-4 lg:py-6">
+      <div className="container flex justify-between items-center">
         {/* logo section */}
         <div>
-          <p className='text-lg font-semibold'>Food <span className='text-red-500'>Bank</span></p>
+          <p className="text-3xl lg:text-4xl font-semibold font-serif">
+            FOOD<span className="text-primary">Bank</span>
+          </p>
         </div>
-        {/* menu section */}
-        <div className='flex justify-center items-center gap-6'>
-          <ul className=' gap-8 hidden sm:flex'>
+        {/* Menu section */}
+        <div className="flex justify-center items-center gap-10">
+          <ul className="gap-8 hidden sm:flex">
             <li className="hover:border-b-2 border-primary uppercase">Home</li>
             <li className="hover:border-b-2 border-primary uppercase">Menu</li>
             <li className="hover:border-b-2 border-primary uppercase">About</li>
           </ul>
-        </div>
-        {/* Login section */}
-        <div className='flex gap-4 items-center' >
-          <img src={Profile} alt="" className='w-10 rounded-full' />
-          <MdOutlineKeyboardArrowDown />
+          {/* login section */}
+          <div className="flex gap-4 items-center">
+            <img src={Profile} alt="" className="w-10 rounded-full " />
+            <IoIosArrowDown />
+          </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
